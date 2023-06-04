@@ -18,7 +18,7 @@ public:
 	*
 	* @returns json object read from the file path iff the path is valid, null object otherwise
 	*/
-	inline static json readJson(const std::string& file_path);
+	static json readJson(const std::string& file_path);
 
 	/**
 	* @brief Writes a json to a filepath
@@ -26,5 +26,5 @@ public:
 	* @param file_path path to write json
 	* @param j json to write
 	*/
-	inline static void writeJson(const std::string& file_path, const json& j);
+	static void writeJson(const std::string& file_path, const json& j);
 };
